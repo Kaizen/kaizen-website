@@ -1,0 +1,91 @@
+
+$font-primary: filson-pro, sans-serif;
+
+html {
+  font-size: $theme-font-size-base;
+  line-height: $theme-font-line-height;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: $theme-color-primary;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+
+
+.button {
+  font-weight: 700;
+  font-size: to-em(16px);
+  line-height: to-em(22px);
+
+  @include respond-below(sm) {
+    font-size: to-em(14px);
+    line-height: to-em(18px);
+  }
+}
+
+.card-list {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 48px;
+
+  @include respond-below(lg) {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  @include respond-below(sm) {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+a {
+  color: $theme-color-primary;
+  border-bottom: none;
+  transition: color $theme-transition-short linear;
+
+  &.arrow {
+    &:after {
+      content: '->';
+    }
+  }
+
+  &:visited, &:active, &:link {
+    color: $theme-color-primary;
+  }
+
+  &:hover {
+    color: $theme-color-red;
+    text-decoration: none;
+  }
+
+  &.clean {
+    border-bottom: none !important;
+    text-decoration: none;
+  }
+}
+
+// links in content
+@each $name, $color in $theme-colors {
+  a.theme-color--#{$name} {
+    color: $color;
+    border-bottom: none;
+
+    &:visited, &:active, &:link {
+      color: $color;
+    }
+
+    &:hover {
+      color: $theme-color-red;
+      text-decoration: none;
+    }
+  }
+}

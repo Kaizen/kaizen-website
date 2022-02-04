@@ -1,0 +1,13 @@
+.title-widget {
+  padding: $theme-padding-xl 0 $theme-padding-lg 0;
+
+  &.title-widget--empty-body {
+    h1 {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  @include respond-below(md) {
+    padding: $theme-padding 0 $theme-padding 0;
+  }
+}

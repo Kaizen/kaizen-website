@@ -1,0 +1,64 @@
+$theme-directory: '/wp-content/themes/founders/';
+
+body {
+  background-color: #FAF9F7;
+  overflow-x: hidden;
+  width: 100%;
+
+  div.layout-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  div.layout-wrapper {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1600px;
+
+    transform: translateX(0);
+    transition: transform 300ms ease-in-out;
+
+    @include respond-above(md) {
+      transform: translateX(0) !important;
+    }
+  }
+}
+
+#page {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: $header-height;
+  background-color: #fff;
+
+  body.home &, body.single-post & {
+  }
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+// Elementor offsets
+:not(.elementor-preset) {
+  &.elementor-container {
+    max-width: none !important;
+    width: 100% !important;
+    flex-wrap: wrap;
+  }
+
+  &.elementor-widget {
+    margin-bottom: 0 !important;
+  }
+
+  &.elementor-widget-wrap {
+    padding: 0 !important;
+  }
+
+  &.elementor-column {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

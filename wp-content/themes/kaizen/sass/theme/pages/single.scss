@@ -1,0 +1,9 @@
+body.single-post {
+  .elementor-section:last-of-type {
+    margin-bottom: 84px;
+
+    @include respond-below(sm) {
+      margin-bottom: 48px;
+    }
+  }
+}

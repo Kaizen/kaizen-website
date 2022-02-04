@@ -1,0 +1,27 @@
+.widget {
+  @include respond-below(md) {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
+
+  @include respond-below(sm) {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+}
+
+.widget--large-padding-bottom {
+  padding-bottom: $theme-padding-xl;
+
+  @include respond-below(md) {
+    padding-bottom: $theme-padding;
+  }
+}
+
+.widget--large-padding-top {
+  padding-top: $theme-padding-xl;
+
+  @include respond-below(md) {
+    padding-top: $theme-padding;
+  }
+}

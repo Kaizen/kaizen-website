@@ -1,26 +1,84 @@
 <?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package WordPress
+ * @subpackage Twenty_Nineteen
+ * @since 1.0.0
+ */
+
 get_header();
 ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main">
+    <main class="index">
+        <div class="container">
+            <h1>Heading 1</h1>
+            <h2>Heading 1</h2>
+            <h3>Heading 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lobortis tortor. Nulla malesuada nec mi at lobortis. Phasellus convallis lacus ut egestas euismod. Nullam non congue lorem. Suspendisse cursus ipsum lectus, in auctor urna suscipit bibendum. Nulla facilisi. Nam aliquam eleifend odio, non pretium risus tincidunt laoreet. Vivamus in posuere urna. Morbi suscipit urna libero, nec dapibus eros pellentesque finibus. Nulla ut ligula et urna pellentesque scelerisque. Vivamus ultricies quam felis, non tincidunt quam consequat non.
 
-          <h1>Lorem Ipsum Kaizen</h1>
-          <h2>Lorem Ipsum Kaizen</h2>
-          <h3>Lorem Ipsum Kaizen</h3>
-          <h4>Lorem Ipsum Kaizen</h4>
+                Nulla lobortis neque at sapien pharetra, vel egestas diam elementum. Vivamus ex diam, ornare eget accumsan quis, ornare sed elit. Nunc porta sed nunc at aliquam. Integer egestas maximus elit, in faucibus velit mollis ut. Suspendisse mattis ex id nulla eleifend, id mattis justo maximus. Etiam lobortis fringilla nulla, nec auctor libero venenatis ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed in erat dictum, cursus nisi nec, finibus neque.</p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac mi egestas, posuere sem sit amet, laoreet ex. Sed facilisis odio vitae tellus faucibus, a vestibulum risus pretium. Nunc maximus non sapien a porta. Phasellus neque massa, dignissim vitae bibendum et, aliquet a dui. Donec auctor sem vel ipsum porttitor, efficitur mattis mauris viverra. Sed at urna lectus. Etiam id nibh lobortis, tincidunt nibh at, efficitur mauris. Nunc in purus in nulla porta congue vestibulum eu lectus. In maximus ac odio eget bibendum. Vivamus sed placerat odio. Morbi urna lacus, scelerisque molestie arcu ac, ornare efficitur nisi.
+            <label>label</label>
+            <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et lobortis tortor. Nulla malesuada nec mi at lobortis. Phasellus convallis lacus ut egestas euismod. Nullam non congue lorem. Suspendisse cursus ipsum lectus, in auctor urna suscipit bibendum. Nulla facilisi. Nam aliquam eleifend odio, non pretium risus tincidunt laoreet. Vivamus in posuere urna. Morbi suscipit urna libero, nec dapibus eros pellentesque finibus. Nulla ut ligula et urna pellentesque scelerisque. Vivamus ultricies quam felis, non tincidunt quam consequat non.</blockquote>
 
-              Cras luctus felis massa, ut tristique purus lacinia sed. Aliquam eget volutpat nibh. Aliquam at erat dignissim purus lobortis luctus et laoreet tellus. Curabitur eu dui turpis. Nulla facilisi. Quisque diam risus, dapibus lacinia enim vitae, rutrum elementum justo. Maecenas sit amet enim pretium, feugiat ante a, vulputate sem. Curabitur tristique ut nulla vel lobortis.
+            <ol class="theme--light-blue">
+                <li><strong>Eenmanszaak</strong><br/>Number one</li>
+                <li><strong>Vof</strong><br/>Number two</li>
+                <li>Number three</li>
+            </ol>
 
-              Maecenas ullamcorper vel lectus ac tempor. Vestibulum at ante quis dui faucibus malesuada eget id ipsum. Quisque in sem dolor. Duis pellentesque sapien leo. Curabitur sagittis neque a sem iaculis pulvinar. Praesent id vestibulum lorem. Quisque luctus imperdiet orci at fringilla. Quisque fringilla odio non odio finibus, vel interdum quam hendrerit. Sed dignissim massa metus, non vehicula metus varius quis. Nam viverra mauris lobortis, molestie enim et, sodales nibh.
+            <ol class="theme--orange">
+                <li><strong>Eenmanszaak</strong><br/>Number one</li>
+                <li><strong>Vof</strong><br/>Number two</li>
+                <li>Number three</li>
+                <li>Number four</li>
+                <li>Fusce magna metus, finibus eget sagittis id, sodales vitae sapien. Nam ultrices nisi non metus mattis lobortis.</li>
+            </ol>
 
-              Quisque sit amet risus non enim tincidunt ultricies. Etiam suscipit eros at est egestas, id gravida purus efficitur. Nam bibendum mi metus, non posuere nibh ultrices vitae. Morbi vel congue elit. Duis risus nisl, facilisis in viverra at, bibendum porta arcu. Nulla sed nibh vehicula, varius sapien sed, porttitor massa. Aliquam porta nibh in arcu iaculis, ac mattis orci varius.
+            <h2>test</h2>
 
-              Proin cursus est orci, id lacinia ipsum semper in. Etiam egestas elit in mi scelerisque, vitae lacinia est dapibus. In massa lectus, eleifend a metus nec, ullamcorper lobortis dolor. Aliquam vestibulum tortor et ante porttitor vulputate. Proin vestibulum eu velit vitae varius. Proin euismod egestas felis, a venenatis purus placerat nec. Mauris mauris nulla, hendrerit sit amet elit at, hendrerit pellentesque enim. Pellentesque ac lorem quis quam mollis finibus.</p>
-        </main><!-- .site-main -->
-    </div><!-- .content-area -->
+            <ul class="theme--orange">
+                <li><strong>Eenmanszaak</strong><br/>Number one</li>
+                <li><strong>Vof</strong><br/>Number two</li>
+                <li>Number three</li>
+                <li>Number four</li>
+                <li>Fusce magna metus, finibus eget sagittis id, sodales vitae sapien. Nam ultrices nisi non metus mattis lobortis.</li>
+            </ul>
 
+            <p class="text--small">Fusce est leo, fermentum et tristique id, pellentesque non ex. Fusce magna metus, finibus eget sagittis id, sodales vitae sapien. Nam ultrices nisi non metus mattis lobortis. Duis a auctor leo. Donec efficitur magna mauris, nec sagittis ante porta ac. Aliquam erat volutpat. Donec at faucibus orci.</p>
+            <p class="text--tiny">Fusce est leo, fermentum et tristique id, pellentesque non ex. Fusce magna metus, finibus eget sagittis id, sodales vitae sapien. Nam ultrices nisi non metus mattis lobortis. Duis a auctor leo. Donec efficitur magna mauris, nec sagittis ante porta ac. Aliquam erat volutpat. Donec at faucibus orci.</p>
+            <div class="text--tiny text--upper">17 Mei 2020</div>
+
+            <a href="#">Een anchor element</a>
+        </div>
+
+        <?php
+        if (have_posts()) {
+
+            // Load posts loop.
+            while (have_posts()) {
+                the_post();
+                get_template_part('template-parts/content/content');
+            }
+
+            // Previous/next page navigation.
+            twentynineteen_the_posts_navigation();
+
+        } else {
+
+            // If no content, include the "No posts found" template.
+            get_template_part('template-parts/content/content', 'none');
+
+        }
+        ?>
+    </main>
 <?php
 get_footer();
